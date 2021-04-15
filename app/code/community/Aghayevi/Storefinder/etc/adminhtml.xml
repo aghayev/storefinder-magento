@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <storefinder translate="title">
+                        <title>Storefinder</title>
+                        <sort_order>85</sort_order>
+                    </storefinder>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <storefinder translate="title" module="storefinder">
+                                        <title>Storefinder</title>
+                                    </storefinder>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <storefinder translate="title" module="storefinder">
+            <title>Storefinder</title>
+            <sort_order>101</sort_order>
+            <children>
+                <storefinder module="storefinder">
+                    <title>POI Editor</title>
+                    <action>adminhtml/storefinder_poi</action>
+                </storefinder>
+            </children>
+        </storefinder>
+    </menu>
+</config>

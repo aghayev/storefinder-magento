@@ -1,0 +1,14 @@
+<jstranslator>
+    <translation-1 translate="message" module="core">
+        <message>Current position use in Chrome restricted under HTTP protocol</message>
+    </translation-1>
+    <translation-2 translate="message" module="core">
+        <message>Request failed. Please contact customer support.</message>
+    </translation-2>
+    <translation-3 translate="message" module="core">
+        <message>Add to favourites</message>
+    </translation-3>
+    <translation-4 translate="message" module="core">
+        <message>Favourite</message>
+    </translation-4>
+</jstranslator>

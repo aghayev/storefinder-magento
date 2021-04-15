@@ -1,0 +1,26 @@
+<?php
+/**
+ * Translation file: app/locale/fr_FR/VisionDirect_StoreLocator.csv
+ */
+?>
+
+<script src="https://api-maps.yandex.ru/2.1?load=package.full&lang=ru_RU">
+</script>
+
+<div id="map" style="width: 450px; height: 350px;"></div>
+
+<div class="storefinder-results-container">
+    <span id="storefinder-results-title"><h2><?php echo $this->__('Stores found')?>:</h2></span>
+    <span class="storefinder-results-separator">&nbsp</span>
+    <div id="storefinder-results-list"></div>
+</div>
+
+<?php echo $this->helper('core/js')->includeSkinScript('js/storefinder/index.js') ?>
+
+<!--
+<script type="text/javascript">
+    VD.namespace('VD.modules.storelocator.default_location', '<?php //echo $this->getDefaultLocation() ?>');
+    VD.namespace('VD.modules.storelocator.default_map_zoom', '<?php //echo $this->getDefaultMapZoom() ?>');
+    VD.namespace('VD.modules.storelocator.google_api_key', '<?php //echo $this->getGoogleApiKey() ?>');
+</script>
+-->

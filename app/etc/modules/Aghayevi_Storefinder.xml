@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aghayevi_Storefinder>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Aghayevi_Storefinder>
+    </modules>
+</config>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <storefinder_index_index>
+
+        <reference name="content">
+            <block type="storefinder/search" name="storefinder_search" template="storefinder/search.phtml"/>
+
+            <block type="storefinder/results" name="storefinder_results" template="storefinder/results.phtml"/>
+        </reference>
+    </storefinder_index_index>
+
+    <storefinder_customer_favourite_list>
+
+        <reference name="root">
+            <reference name="head">
+
+                <block type="page/html_head" name="prototype_prereq" as="prototype_prereq"
+                       template="page/html/prototype-prereq.phtml"></block>
+            </reference>
+        </reference>
+
+        <update handle="customer_account"/>
+
+        <reference name="my.account.wrapper">
+            <block type="storefinder/customer_favourite" name="storefinder_customer_favourite"
+                   template="storefinder/customer/favourite.phtml">
+
+            </block>
+        </reference>
+
+    </storefinder_customer_favourite_list>
+
+    <storefinder_customer_favourite_index>
+
+        <update handle="storefinder_customer_favourite_list"/>
+
+    </storefinder_customer_favourite_index>
+
+</layout>
