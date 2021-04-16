@@ -13,7 +13,7 @@ class Aghayevi_Storefinder_Model_Mysql4_Poi_Collection extends Mage_Core_Model_R
     /**
      * Fetch Stores by Latitude and Longitude
      *
-     * Source of SQL Query: http://dexxtr.com/post/83498801191/how-to-determine-point-inside-circle-using-mysql
+     * Utilizes formula to determine the point inside circle using mysql
      *
      * @param string $lat
      * @param string $lng
