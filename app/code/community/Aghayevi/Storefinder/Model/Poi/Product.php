@@ -36,11 +36,10 @@ class Aghayevi_Storefinder_Model_Poi_Product extends Mage_Core_Model_Abstract
             ->addAttributeToSelect('name')
             ->addAttributeToSelect('sku')
             ->addAttributeToSelect('price');
-            //->addAttributeToFilter('entity_id', array('in' => array(4403)));
 
             $collection->getSelect()
                     ->join(array('mep' => "storefinder_poi_product"), "e.entity_id = mep.product_id", array('mep.*'))
-                    ->having('mep.poi_id = 29');
+                    ->having('mep.poi_id = '.$poiId);
         
         
     }
