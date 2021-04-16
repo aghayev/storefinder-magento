@@ -13,7 +13,7 @@ class Aghayevi_Storefinder_Model_Mysql4_Poi_Collection extends Mage_Core_Model_R
     /**
      * Fetch Stores by Latitude and Longitude
      *
-     * Utilizes formula to determine the point inside circle using mysql
+     * Utilizes distance formula (Pythagorean theorem - https://i.ytimg.com/vi/wzQstigxbuo/maxresdefault.jpg) 
      *
      * @param string $lat
      * @param string $lng
